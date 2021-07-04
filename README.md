@@ -1,12 +1,9 @@
 # Moulya
 Networth calculating app.
 
-#### Screenshots
+### Screenshots
 
- ![Homepage](assets/images/screenshots/mainpage-with-data.png) 
+<img src="assets/images/screenshots/mainpage-with-data.png" alt="drawing" width="200"/> | <img src="assets/images/screenshots/add-transaction1.png" alt="drawing" width="200"/>
 
-![homepage-without-data](assets/images/screenshots/main-page-without-data.png) 
-
-![add-transaction](assets/images/screenshots/add-transaction1.png)
-
-![add-transaction](assets/images/screenshots/add-transaction2.png)
+### Authors
+[@vigneshksaithal](https://github.com/vigneshksaithal)
