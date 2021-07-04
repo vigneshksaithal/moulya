@@ -27,7 +27,7 @@ class TransactionsPieChart extends StatelessWidget {
             showTitle: false,
             value: asset,
             color: primary,
-            titleStyle: TextStyle(
+            titleStyle: const TextStyle(
               color: Colors.black,
             ),
             radius: 15,
@@ -36,7 +36,7 @@ class TransactionsPieChart extends StatelessWidget {
             showTitle: false,
             value: liability.abs(),
             color: danger,
-            titleStyle: TextStyle(
+            titleStyle: const TextStyle(
               color: Colors.black,
             ),
             radius: 15,
@@ -44,8 +44,7 @@ class TransactionsPieChart extends StatelessWidget {
         ],
         // read about it in the PieChartData section
       ),
-      swapAnimationDuration: Duration(milliseconds: 1000),
-      swapAnimationCurve: Curves.linear,
+      swapAnimationDuration: const Duration(milliseconds: 1000),
     );
   }
 }

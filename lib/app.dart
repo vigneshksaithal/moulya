@@ -35,7 +35,7 @@ class App extends StatelessWidget {
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             primary: primary, onPrimary: light,
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               vertical: 16,
             ),
             shape: RoundedRectangleBorder(
@@ -46,18 +46,22 @@ class App extends StatelessWidget {
             elevation: 100,
 
             // onPrimary: Colors.black,
-            textStyle: TextStyle(
+            textStyle: const TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
             ),
           ),
         ),
+        textSelectionTheme: const TextSelectionThemeData(
+          cursorColor: Colors.black,
+        ),
         outlinedButtonTheme: OutlinedButtonThemeData(
           style: OutlinedButton.styleFrom(
             primary: primary,
             backgroundColor: light,
-            textStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            padding: EdgeInsets.symmetric(
+            textStyle:
+                const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            padding: const EdgeInsets.symmetric(
               vertical: 16,
             ),
             side: BorderSide(
@@ -73,7 +77,7 @@ class App extends StatelessWidget {
         ),
         textButtonTheme: TextButtonThemeData(
           style: TextButton.styleFrom(
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               horizontal: 50,
               vertical: 20,
             ),
@@ -86,14 +90,14 @@ class App extends StatelessWidget {
           focusColor: primary,
           hoverColor: primary,
           focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
               color: Colors.indigoAccent,
               width: 2.0,
             ),
             borderRadius: BorderRadius.circular(6),
           ),
           errorBorder: OutlineInputBorder(
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
               color: Colors.indigoAccent,
               width: 2.0,
             ),

@@ -11,11 +11,12 @@ class CalculateWeekSummary extends GetxController {
     }
   ];
 
-  calculateSummary() {
+  void calculateSummary() {
     int i = 0;
 
     List<Map<String, dynamic>> transactions = Account.to.transactions;
 
+    // ignore: avoid_function_literals_in_foreach_calls
     transactions.forEach((element) {
       for (i = 0; i < 7;) {
         if (element['timestamp'] == DateTime.now().add(Duration(days: i))) {
@@ -23,7 +24,6 @@ class CalculateWeekSummary extends GetxController {
             'day': element['timestamp'],
           });
         }
-        ;
       }
     });
   }

@@ -13,7 +13,7 @@ class Account extends GetxController {
     30,
   ];
 
-  addTransaction(
+  void addTransaction(
       String type, String? title, DateTime? dateTime, double amount) {
     transactions.add({
       'type': type,
@@ -31,7 +31,7 @@ class Account extends GetxController {
     update();
   }
 
-  addAsset(double amount) {
+  void addAsset(double amount) {
     assetAmount += amount;
 
     calculateNetworth();
@@ -39,7 +39,7 @@ class Account extends GetxController {
     update();
   }
 
-  addLiability(double amount) {
+  void addLiability(double amount) {
     liabilityAmount -= amount;
 
     calculateNetworth();
@@ -47,8 +47,7 @@ class Account extends GetxController {
     update();
   }
 
-  calculateNetworth() {
-    print('$assetAmount $liabilityAmount');
+  void calculateNetworth() {
     networth = assetAmount + liabilityAmount;
 
     update();
